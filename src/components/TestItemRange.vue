@@ -86,7 +86,7 @@
         }
     }
 
-    .range-slider {
+    .range-slider.range-slider {
         height: 100%;
         border-radius: 260px;
         overflow: hidden;
@@ -95,17 +95,17 @@
         flex-grow: 1;
     }
 
-    .range-slider-rail {
+    .range-slider-rail.range-slider-rail {
         height: 100%;
         background: #78cedd;
     }
 
-    .range-slider-fill {
+    .range-slider-fill.range-slider-fill {
         height: 100%;
         background-color: #78cedd;
     }
 
-    .range-slider-knob {
+    .range-slider-knob.range-slider-knob {
         width: 62px;
         height: 62px;
         @include desktop() {
