@@ -55,7 +55,7 @@ import tests from '../files/tests';
 import StartComponent from './Start.vue';
 import TestItemRange from './TestItemRange.vue';
 import TestItem from './TestItem.vue';
-import { redirectUrl } from '../../config.js'
+import { redirectUrl } from '../config.js'
 
 export default {
     name: 'Main',
