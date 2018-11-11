@@ -1,0 +1,1 @@
+export const redirectUrl = 'https://phizer.adbakers.com.ua';

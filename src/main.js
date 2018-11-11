@@ -2,6 +2,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import Tooltip from 'vue-directive-tooltip';
+Vue.use(Tooltip);
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

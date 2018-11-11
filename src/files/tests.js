@@ -42,7 +42,7 @@ const tests = [
     {
         id: 7,
         number: '07',
-        text: ' Чи дотримується вона здорового харчування?',
+        text: ' Чи дотримується ця людина здорового харчування?',
         trueBtnText: 'Ні',
         falseBtnText: 'Так',
         inverseBtns: true,

@@ -55,6 +55,7 @@ import tests from '../files/tests';
 import StartComponent from './Start.vue';
 import TestItemRange from './TestItemRange.vue';
 import TestItem from './TestItem.vue';
+import { redirectUrl } from '../../config.js'
 
 export default {
     name: 'Main',
@@ -79,10 +80,8 @@ export default {
             this.testCount += stepTestCount;
             if (this.step === 9) {
                 console.log('redirect');
-                let searchParams = `?test-results=${this.testCount}`
-                this.$router.push(searchParams);
-                console.log(this.$route);
-                location.href = `localhost:8080/${searchParams}`;
+                let searchParams = `/test-result?result=${this.testCount}`
+                location.href = `${redirectUrl}${searchParams}`;
                 return;
             }
             this.step++;

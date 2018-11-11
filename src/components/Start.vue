@@ -1,10 +1,10 @@
 <template>
     <div class="start-component">
         <p class="start-text-head text-big">
-            Серцево-<br />судинні  захворювання
+            Серцево-судинні захворювання
         </p>
         <p class="text-middle text-blue">
-            Чи близька Вам людина входить до групи ризику?
+            Чи близька Вам людина входить до групи ризику<StartTooltip tooltip-id="start_tooltip"></StartTooltip>?
         </p>
 
         <p class="text-sm">
@@ -32,13 +32,18 @@
 </template>
 
 <script>
-    /* eslint-disable */
+
+    import StartTooltip from './StartTooltip'
+
     export default {
         name: 'StartComponent',
         data() {
             return {
                 disabledBtn: false,
             }
+        },
+        components: {
+            StartTooltip
         },
         methods: {
             goToFirstStep() {
