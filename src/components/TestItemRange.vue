@@ -8,7 +8,7 @@
             <div class="range-wrapper">
                 <range-slider
                         class="slider"
-                        min="1"
+                        min="25"
                         max="100"
                         step="1"
                         v-model="sliderValue">
